@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        position: relative;
+        background-color: skyblue;
+      }
+      #div1 {
+        width: 60vw;
+        height: 60vh;
+        position: absolute;
+        left: 21%;
+        box-shadow: 5px 5px 5px 5px;
+        border-radius: 10%;
+        background-image: linear-gradient(skyblue, white);
+      }
+      .header1 {
+        position: absolute;
+        left: 40%;
+      }
+      #div2 {
+        position: absolute;
+        top: 15%;
+        left: 25%;
+      }
+      .div2 {
+        margin-top: -15%;
+        width: 25vw;
+        height: 3vh;
+      }
+      #submit,
+      #Clear {
+        position: absolute;
+        bottom: 25%;
+        left: 25%;
+        width: 8vw;
+        height: 6vh;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      #Clear {
+        left: 50%;
+      }
+      #p {
+        position: absolute;
+        bottom: 12%;
+        left: 25%;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div id="div1">
+        <h1 class="header1">Reset Password</h1>
+        <div id="div2">
+          <h3>Mobile Number</h3>
+          <input class="div2" type="text" placeholder="Enter Mobile Number" />
+          <h3>Password</h3>
+          <input
+            class="div2"
+            type="password"
+            placeholder="Enter New Password"
+          />
+        </div>
+        <input type="submit" value="Submit" id="submit" />
+        <input type="reset" value="Clear" id="Clear" />
+        <p id="p"><a href="index.html">Login</a></p>
+      </div>
+    </form>
+  </body>
+</html>
